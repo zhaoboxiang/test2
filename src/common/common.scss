@@ -1,0 +1,56 @@
+@mixin clearfix { //清楚浮动
+  content: '';
+  display: block;
+  clear: both;
+}
+@mixin vertical-middle { //垂直居中
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+}
+@mixin font { font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; }
+@mixin title-bottom {
+  content: '';
+  border-bottom: 10px solid #1768B3;
+  display: block;
+  height: 15px;
+  width: 80px;
+  position: relative;
+  top: 5px;
+  left: 40%;
+}
+@mixin title-text {
+  @include font;
+  display: inline-block;
+  font-size: 41px;
+  font-weight: bold;
+  border-bottom: 1px solid #EAEAEA;
+}
+@mixin title-underline {
+  content: '';
+  border-bottom: 3px solid #EFAF32;
+  display: block;
+  height: 30px;
+  width: 45px;
+  position: relative;
+  top: -10px;
+  left: 35%;
+  margin-bottom: 30px
+}
+@mixin shade {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: -22px;
+  right: 0;
+  bottom: 0;
+  left: 5px;
+  opacity: 0.8;
+  background: #155EA1;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  z-index: -1;
+}

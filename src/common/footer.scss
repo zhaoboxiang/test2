@@ -1,0 +1,36 @@
+@import "common";
+.hamafooter {
+  margin-top: 150px;
+  width: 100%;
+  .footer-main {
+    border-top: 1px solid #F0F0F0;
+    position: relative;
+    .footer-icons {
+      margin-top: 30px;
+      img {
+        margin-left: 28px;
+      }
+    }
+    .weixin-code {
+      @include vertical-middle;
+      width: 75px;
+      transform: translate3d(-50%, -70%, 0);
+    }
+    .footer-info {
+      @include vertical-middle;
+      top: 150%;
+      left: 55%;
+      a {
+        margin-left: 30px;
+      }
+    }
+  }
+  .official-icon {
+    border-top: 1px solid #F0F0F0;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    img {
+      margin-top: 20px;
+    }
+  }
+}

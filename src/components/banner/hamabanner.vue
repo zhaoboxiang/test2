@@ -1,7 +1,6 @@
 <template>
   <div class="hamabanner">
-    <!--<img class="banner" src="./images/bg.png" alt="">-->
-    <img class="banner-left  animated rotateIn" src="./images/banner-left.png" alt="">
+    <img class="banner-left  animated zoomIn" src="./images/banner-left.png" alt="">
     <div class="banner-right  animated bounceInRight">
       <div class="text-left">
         <span class="banner-right-text text-title">无极蛤蟆线</span>

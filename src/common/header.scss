@@ -1,0 +1,95 @@
+$blue-color: #1768B3;
+@import "common";
+.hamaheader {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
+//登陆注册栏
+.login {
+  position: relative;
+  background: #ffffff;
+  border-top: 2px solid $blue-color;
+}
+.login:after {
+  @include clearfix;
+}
+.sign-in, .sign-up {
+  height: 30px;
+  width: 60px;
+  outline: none;
+  border: 1px solid $blue-color;
+  cursor: pointer;
+}
+.sign-in {
+  position: absolute;
+  border-radius: 15px;
+  right: 48px;
+  bottom: 0;
+  z-index: 2;
+  background: $blue-color;
+  color: #fff;
+}
+.sign-up {
+  position: absolute;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  color: $blue-color;
+}
+.login-left {
+  float: left;
+  margin-left: 12%;
+  height: 30px;
+  margin-top: 12px;
+  cursor: pointer;
+  .phone-number {
+    position: relative;
+    top: -8px;
+    color: $blue-color;
+    &:after {
+      content: '';
+      border-right: 1px solid;
+      margin: 0 10px;
+    }
+  }
+}
+.login-right {
+  float: right;
+  top: 30px;
+  margin-right: 19%;
+  margin-top: 8px;
+  position: relative;
+}
+
+//导航栏
+.main-nav {
+  background: rgba(193,193,193,.9);
+  height: 80px;
+  position: relative;
+}
+.logo {
+  @include vertical-middle;
+  left: 20%;
+}
+
+.el-tabs__header {
+  border: none;
+  .el-tabs__nav-wrap {
+    line-height: 7;
+  }
+}
+.el-tabs__item {
+  @include font;
+  color: #333;
+  font-size: 20px;
+  &:nth-child(3) {
+    background: url("./images/fire_icon.png") no-repeat right center;
+  }
+}
+.el-tabs__active-bar {
+  bottom: 4px;
+}
